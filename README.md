@@ -33,8 +33,6 @@ compartments:
 - **Water column** (`0 ≤ z ≤ L₁`, with `L₁ = 50 m`)
 - **Sediment** (`L₁ ≤ z ≤ L₂`, with `L₂ = 150 m`)
 
-Each compartment is governed by a reaction–advection–diffusion equation, coupled at the
-interface `z = L₁` through a flux condition.
 
 The processes parametrised in the model are:
 
