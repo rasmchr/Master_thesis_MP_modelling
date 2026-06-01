@@ -113,16 +113,22 @@ cost-function landscape).
 
 ```
 .
-├── src/                  # model, solvers, and MCMC source
-│   ├── solver.py         # numerical PDE solver (iteration 1)
-│   ├── analytical.py     # closed-form two-compartment solution (iteration 2)
-│   ├── mcmc.py           # Metropolis–Hastings sampler
-│   ├── cost.py           # cost functions and weighting schemes
-│   └── diagnostics.py    # Gelman–Rubin, chain summaries
+├── src/                  # model, solvers, MCMC source, MCMC plots
+│   ├── B1_ReacAdv_twocomp_solver_implicit_v03.py         # Implicit numerical PDE solver (iteration 2)
+│   ├── Gelman-Rubin.py                                   # Gelman Rubin diagnostic chains
+│   ├── Spearmans_corr_plots.py                           # Calculates and plots the Spearmans correlations between parameters
+│   ├── chain_plot.py                                     # Plots different characteristics about the chains
+│   ├── it2_analytcal_twocomp_solver.py                   # Solves the analystical equations of the two compartment model
+│   └── param_estim_it2.py                                # performs the parameter estimation of the using the analytical two compartment solver.
 ├── data/                 # compiled field dataset
 ├── figures/              # generated figures and visualisations
-├── scripts/              # experiment / run scripts
 ├── notebooks/            # exploratory analysis
+│   ├── 
+│   ├── 
+│   ├── 
+│   ├── 
+│   ├── 
+│   └── 
 └── README.md
 ```
 
