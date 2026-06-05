@@ -118,17 +118,30 @@ cost-function landscape).
 │   ├── Gelman-Rubin.py                                   # Gelman Rubin diagnostic chains
 │   ├── Spearmans_corr_plots.py                           # Calculates and plots the Spearmans correlations between parameters
 │   ├── chain_plot.py                                     # Plots different characteristics about the chains
+│   ├── Weights.py                                        # Calculates and plots each of the weighting schemes utilised in the these
+│   ├── it4_mcmc.ipynb                                    # Performs the Bayesian Inference on an idealized parameter set
+│   ├── it4_mcmc_fixed_C.ipynb                            # Performs the Bayesian Inference on an idealized parameter set while having C fixed.
+│   ├── it4_mcmc_nchains.ipynb                            # Performs the Bayesian Inference on an ideliazied parameter set with initial conditions for the estimated parameters being random.      
 │   ├── it2_analytcal_twocomp_solver.py                   # Solves the analystical equations of the two compartment model
 │   └── param_estim_it2.py                                # performs the parameter estimation of the using the analytical two compartment solver.
-├── data/                 # compiled field dataset
-├── figures/              # generated figures and visualisations
-├── notebooks/            # exploratory analysis
-│   ├── 
-│   ├── 
-│   ├── 
-│   ├── 
-│   ├── 
-│   └── 
+├── data/                 # compiled field dataset along with plotting scripts
+│   ├── Binned_mean_concentration.csv
+│   ├── Data workflow diagram.jpeg
+│   ├── Master data_v01.xlsx
+│   ├── plot.py
+│   └── plot_v1.py       
+├── notebooks/            # exploratory analysis of each iteration
+│   ├── AR_VS_RAD.ipynb
+│   ├── IT1.ipynb
+│   ├── IT2.ipynb
+│   ├── IT3_fullADV.ipynb
+│   ├── IT3_linearADV.ipynb
+│   ├── IT3_sigmoidADV.ipynb
+│   ├── IT4.ipynb
+│   ├── OldANew.ipynb
+│   ├── advection_tries_and_characteristics.ipynb
+│   ├── it3_sig_damkohler.ipynb       
+│   └── plot_diff.ipynb
 └── README.md
 ```
 
